@@ -62,5 +62,6 @@ function traer(){
         //console.log(data.results);
         ram.innerHTML = `${(data.results['0'].email)}`;
         img.src = `${(data.results['0'].picture.large)}`;
+        console.log(url);
     })    
 }
