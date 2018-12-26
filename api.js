@@ -60,7 +60,7 @@ function traer(){
     const url = "https://randomuser.me/api/";
     fetch(url).then(res => res.json()).then(data => {
         //console.log(data.results);
-        ram.innerHTML = `${(data.results['0'].email)}`;
-        img.src = `${(data.results['0'].picture.large)}`;
+        ram.innerHTML = `${(data.results[0].email)}`;
+        img.src = `${(data.results[0].picture.large)}`;
     })    
 }
